@@ -1,0 +1,19 @@
+.btn{
+
+  //font-size: 19;
+  font-weight: bold;
+  padding:21px 41px 20px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 100px;
+  line-height: 1;
+
+  &--theme--red{
+    color: #fff;
+    background: $red;
+  }
+  &:hover{
+    color:$red;
+    background: #fff;
+  }
+}
