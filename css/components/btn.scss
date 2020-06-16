@@ -7,13 +7,26 @@
   text-transform: uppercase;
   border-radius: 100px;
   line-height: 1;
+  display: inline-block;
+  border: none;
 
   &--theme--red{
     color: #fff;
     background: $red;
+    &:hover{
+      color:$red;
+      background: #fff;
+    }
   }
-  &:hover{
-    color:$red;
-    background: #fff;
+
+  &--theme--transparent{
+    padding:21px 25px 20px 25px;
+    background: transparent;
+    color: #999999;
+    text-transform: none;
+    font-size: $baseFontSize;
+    &:hover{
+      color: $red;
+    }
   }
 }

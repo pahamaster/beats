@@ -5,7 +5,10 @@ $baseFontSize: 16px;
 $red: #e01f3d;
 $gray: #f5f5f5;
 $color_p: #666666;
-//$color_p: blue;
+
+//z-indexes
+
+$z-fixed-menu: 100;
 
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
@@ -26,3 +29,7 @@ $color_p: #666666;
 @import "components/reviews";
 @import "components/interactive-avatar";
 @import "components/reviews-section";
+@import "components/order-section";
+@import "components/form";
+@import "components/radio";
+@import "components/fixed-menu";
