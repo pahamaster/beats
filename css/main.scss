@@ -1,16 +1,17 @@
-$containerWidth: 940px;
+$containerWidth: 960px;
 $baseFontSize: 16px;
 
 //colors
 $red: #e01f3d;
 $gray: #f5f5f5;
-//$darkGreen: #0b4d3c;
+$color_p: #666666;
+//$color_p: blue;
 
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
 
 //setups
-@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:300,400,400i,700&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Play:300,400,400i,700&display=swap&subset=cyrillic");
 @import "layout.scss";
 
 //componentss
@@ -18,3 +19,10 @@ $gray: #f5f5f5;
 @import "components/header";
 @import "components/feature";
 @import "components/btn";
+@import "components/section";
+@import "components/benefits";
+@import "components/headline";
+@import "components/benefits-section";
+@import "components/reviews";
+@import "components/interactive-avatar";
+@import "components/reviews-section";

@@ -1,0 +1,10 @@
+.benefits-section{
+  position: relative;
+  &:after{
+    
+    position: absolute;
+    bottom: -22px;
+    left: 6%;
+    content: url("../img/square2.svg");
+  }
+}

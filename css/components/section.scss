@@ -1,0 +1,24 @@
+.section{
+  height: 100vh;
+  min-height: 650px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section__title{
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 57px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.headline__tile{
+  margin-bottom: 26px;
+}
+
+.headline__subtitle{
+  font-size: 18px;
+  color: $color_p;
+}
