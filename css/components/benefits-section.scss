@@ -1,10 +1,15 @@
 .benefits-section{
   position: relative;
   &:after{
-    
+    content: "";
     position: absolute;
     bottom: -22px;
     left: 6%;
-    content: url("../img/square2.svg");
+    width: 0;
+    height: 0;
+    border-bottom: 32px solid $red;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    transform: rotate(-20deg);
   }
 }

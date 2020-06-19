@@ -17,6 +17,10 @@
       color:$red;
       background: #fff;
     }
+    &:focus{
+      color:$red;
+      background: #fff;
+    }
   }
 
   &--theme--transparent{
@@ -27,6 +31,9 @@
     font-size: $baseFontSize;
     &:hover{
       color: $red;
+    }
+    &:focus{
+      color:$red;
     }
   }
 }

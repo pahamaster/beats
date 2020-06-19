@@ -1,44 +1,28 @@
 .hero{
-  
   background-color: $gray;
   height: 100vh;
   min-height:650px;
   position: relative;
 
   &:after{
+    content: "";
     position: absolute;
-    bottom: -25px;
+    bottom: -20px;
     left: 80%;
-    content: url("../img/square.png");
+    width: 10px;
+    height: 40px;
+    background: #999999;
+    transform: rotate(45deg);
+    //border: 10px solid; /* Прозрачные границы */
+    //border-top: 10px solid green; /* Добавляем треугольник */
   }
 }
 
-.hero__title-section{
-  //width: 42%;
-}
-
 .hero__container{
- 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   padding: 23px 50px 36px; 
-  background: url("../img/beats.png") right 10% center / 46% auto no-repeat,
-  url("../img/ellipse.png") right 5% center / 48% auto no-repeat;
 }
 
-.hero__main-title{
-  font-size: 48px;
-  line-height: 1.1;
-  font-weight: bold;
-  margin-bottom: 37px;
-  text-transform: uppercase;
-  width: 391px;
-}
-
-.hero__title-desc{
-  font-size: 18px;
-  width: 340px;
-  margin-bottom: 24px;
-}
