@@ -3,13 +3,13 @@
   &:after{
     content: "";
     position: absolute;
-    bottom: -22px;
+    bottom: rem(-22px);
     left: 6%;
     width: 0;
     height: 0;
-    border-bottom: 32px solid $red;
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
+    border-bottom: rem(32px) solid $red;
+    border-left: rem(16px) solid transparent;
+    border-right: rem(16px) solid transparent;
     transform: rotate(-20deg);
   }
 }

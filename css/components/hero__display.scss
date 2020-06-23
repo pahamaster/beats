@@ -1,10 +1,14 @@
 .hero__image-section{
-  width: 500px;
-  height: 500px;
-  //border: 1px solid transparent;
+  width: rem(500px);
+  height: rem(500px);
+  //border: rem(1px) solid green;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
+  @include tablets{
+    width: rem(350px);
+    height: rem(350px);
+  }
 }
 
 .hero__image-image{
@@ -17,56 +21,59 @@
   object-fit: cover;
 }
 
-/*
-.interactive-avatar__link{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: block;
-}
-
-
-
-.hero__image-section{
-  //width: 16px;
-  //height: 16px;
-  border-radius: 50%;
-  border: 1px solid transparent;
-  display: block;
-  overflow: hidden;
-  position: relative;
-  &:before{
-    content:"";
-    display: block;
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background: #999999;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}*/
-
 .hero__display{
   display: flex;
+  @include tablets{
+    flex-direction: column-reverse;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
 }
 
+
 .hero__main-title{
-  font-size: 48px;
+  font-size: rem(48px);
   line-height: 1.1;
   font-weight: bold;
-  margin-bottom: 37px;
-  margin-top: 44px;
+  margin-bottom: rem(37px);
+  margin-top: rem(44px);
   text-transform: uppercase;
-  width: 391px;
+  width: rem(391px);
+  @include tablets{
+    //font-size: 48px);
+    width: 100%;
+    margin: 0 auto;
+  }
+  @include phones{
+    padding: 0 10%;
+    font-size: 36px;
+    //font-weight: 600;
+  }
 }
 
 .hero__title-desc{
-  font-size: 18px;
-  width: 340px;
-  margin-bottom: 24px;
+  font-size: rem(18px);
+  width: rem(340px);
+  margin-bottom: rem(24px);
+
+  @include tablets{
+    width: 25rem;
+    margin: rem(37px) auto;
+  }
+}
+
+.hero__title-section{
+  @include tablets{
+    margin-top: rem(33px);
+    //width: 100%;
+    //display: flex;
+    //flex-direction: column;
+    //justify-content: center;
+    //text-align: center;
+  }
+  @include phones{
+    //margin-bottom: 25%;
+  }
 }

@@ -7,17 +7,18 @@
 }
 
 .features__item{
-  margin-right: 46px;
+  margin-right: rem(46px);
   &:last-child{
     margin-right: 0;
   }
 }
 
 .feature__icon{
-  //width: 45px;
-  margin-right: 9px;
+  width: rem(45px);
+  height: rem(45px);
+  margin-right: rem(9px);
 }
 
 .feature__text{
-  max-width: 95px;
+  max-width: rem(95px);
 }

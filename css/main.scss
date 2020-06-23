@@ -1,6 +1,10 @@
 $containerWidth: 960px;
 $baseFontSize: 16px;
 
+//breakpoints
+$tablets: 768px;
+$phones: 480px;
+
 //colors
 $red: #e01f3d;
 $gray: #f5f5f5;
@@ -9,6 +13,8 @@ $color_p: #666666;
 //z-indexes
 
 $z-fixed-menu: 100;
+
+@import "components/media";
 
 //normalize
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
@@ -34,3 +40,6 @@ $z-fixed-menu: 100;
 @import "components/radio";
 @import "components/fixed-menu";
 @import "components/hero__display";
+@import "components/hamburger";
+@import "components/contacts";
+@import "components/footer";

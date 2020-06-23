@@ -3,11 +3,11 @@
   &:after{
     content: "";
     position: absolute;
-    bottom: -18px;
+    bottom: rem(-18px);
     left: 6%;
-    width: 34px;
-    height: 34px;
-    border-radius: 17px;
+    width: rem(34px);
+    height: rem(34px);
+    border-radius: rem(17px);
     background: #999999;
     
   }

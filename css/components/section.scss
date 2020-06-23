@@ -1,24 +1,28 @@
 .section{
-  height: 100vh;
-  min-height: 650px;
+  //height: 100vh;
+  min-height: 100vh;
   display:flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .section__title{
-  font-size: 48px;
+  font-size: rem(48px);
   font-weight: bold;
-  margin-bottom: 57px;
+  margin-bottom: rem(57px);
   text-align: center;
   text-transform: uppercase;
+  @include phones{
+    font-size: rem(36px);
+    //font-weight: 600;
+  }
 }
 
 .headline__tile{
-  margin-bottom: 26px;
+  margin-bottom: rem(26px);
 }
 
 .headline__subtitle{
-  font-size: 18px;
+  font-size: rem(18px);
   color: $color_p;
 }

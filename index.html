@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=1100">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Beats</title>
   <link rel="stylesheet" href="./css/main.css">
@@ -15,7 +15,9 @@
       <section class="hero">
         <div class="container hero__container">
           <header class="header">
-            <img src="./img/logo.png" alt="beats logo" class="logo">
+            <svg class="logo">
+              <use xlink:href="./sprite.svg#logo"></use>
+            </svg>
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
@@ -27,11 +29,18 @@
                 <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
               </ul>
             </nav>
-            <a href="tel:+78009039090" class="phone-number">
+            <a href="tel:+78009039090" class="phone-number header__phone-number">
               <span class="phone-number__icon">
-                <img src="img/phone.png" alt="" class="phone-number__icon-elem">
+                <svg class="phone-number__icon-elem">
+                  <use xlink:href="./sprite.svg#phone"></use>
+                </svg>
               </span>
               <span class="phone-number__text">8 800 903 90 90</span>
+            </a>
+            <a href="" class="hamburger">
+              <span class="hamburger__plank"></span>
+              <span class="hamburger__plank"></span>
+              <span class="hamburger__plank"></span>
             </a>
           </header>
 
@@ -43,28 +52,28 @@
             </div>
 
             <div class="hero__image-section">
-              <img src="./img/mx452.svg" alt="" class="hero__image-image">
+              <img src="./img/mx452.png" alt="" class="hero__image-image">
             </div>
 
           </div>
           <div class="hero__icons-section">
             <ul class="features">
               <li class="features__item feature">
-                <div class="feature__icon">
-                  <img src="./img/noise.png" alt="noise">
-                </div>
+                <svg class="feature__icon">
+                  <use xlink:href="./sprite.svg#noise"></use>
+                </svg>
                 <div class="feature__text">Безупречный звук</div>
               </li>
               <li class="features__item feature">
-                <div class="feature__icon">
-                  <img src="./img/battery.png" alt="battery">
-                </div>
+                <svg class="feature__icon">
+                  <use xlink:href="./sprite.svg#charging"></use>
+                </svg>
                 <div class="feature__text">До 40 часов работы</div>
               </li>
               <li class="features__item feature">
-                <div class="feature__icon">
-                  <img src="./img/plug.png" alt="plug">
-                </div>
+                <svg class="feature__icon">
+                  <use xlink:href="./sprite.svg#plug"></use>
+                </svg>
                 <div class="feature__text">Технология Fast Fuel</div>
               </li>
             </ul>
@@ -81,7 +90,9 @@
           <ul class="benefits">
             <li class="benefits__item benefit">
               <div class="benefit__image-wrapper">
-                <img src="./img/battery2.svg" alt="battery" class="benefit__icon">
+                <svg class="benefit__icon">
+                  <use xlink:href="./sprite.svg#battery"></use>
+                </svg>
               </div>
               <div class="benefit__text">
                 <h3 class="benefit__title">40 часов работы</h3>
@@ -95,7 +106,9 @@
             </li>
             <li class="benefits__item benefit">
               <div class="benefit__image-wrapper">
-                <img src="./img/sound2.svg" alt="battery" class="benefit__icon">
+                <svg class="benefit__icon">
+                  <use xlink:href="./sprite.svg#sound"></use>
+                </svg>
               </div>
               <div class="benefit__text">
                 <h3 class="benefit__title">Фирменное звучание</h3>
@@ -109,7 +122,9 @@
             </li>
             <li class="benefits__item benefit">
               <div class="benefit__image-wrapper">
-                <img src="./img/time2.svg" alt="time" class="benefit__icon">
+                <svg class="benefit__icon">
+                  <use xlink:href="./sprite.svg#time"></use>
+                </svg>
               </div>
               <div class="benefit__text">
                 <h3 class="benefit__title">Быстрая зарядка</h3>
@@ -130,7 +145,7 @@
             <div class="reviews__display">
               <div class="reviews__display-inner">
                 <div class="reviews__avatar">
-                  <img src="./img/billie-large.svg" alt="" class="reviews__avatar-img">
+                  <img src="./img/billie-large.png" alt="" class="reviews__avatar-img">
                 </div>
                 <article class="reviews__content">
                   <h3 class="reviews__title">Отличный звук</h3>
@@ -148,17 +163,17 @@
             <ul class="reviews__switcher">
               <li class="reviews__switcher-item interactive-avatar interactive-avatar--active">
                 <a href="#" class="interactive-avatar__link">
-                  <img src="./img/419-billie-small.svg" alt="girl1" class="interactive-avatar__img">
+                  <img src="./img/billie-small.png" alt="girl1" class="interactive-avatar__img">
                 </a>
               </li>
               <li class="reviews__switcher-item interactive-avatar">
                 <a href="#" class="interactive-avatar__link">
-                  <img src="./img/photo-144.svg" alt="girl2" class="interactive-avatar__img">
+                  <img src="./img/photo-144.png" alt="girl2" class="interactive-avatar__img">
                 </a>
               </li>
               <li class="reviews__switcher-item interactive-avatar">
                 <a href="#" class="interactive-avatar__link">
-                  <img src="./img/photo-146.svg" alt="boy" class="interactive-avatar__img">
+                  <img src="./img/photo-146.png" alt="boy" class="interactive-avatar__img">
                 </a>
               </li>
             </ul>
@@ -212,21 +227,19 @@
                   <textarea name="" id="" class="form__input form__input-textarea"></textarea>
                 </label>
               </div>
-              <div class="form__row">
-                <div class="form__controls">
-                  <label class="radio">
-                    <input type="radio" name="option" class="radio__elem">
-                    <div class="radio__visible"></div>
-                    <div class="form__title">Потребуется сдача</div>
-                  </label>
-                  <label class="radio">
-                    <input type="radio" name="option" class="radio__elem">
-                    <div class="radio__visible"></div>
-                    <div class="form__title">Оплата по карте</div>
-                  </label>
-                </div>
+              <div class="form__controls">
+                <label class="radio">
+                  <input type="radio" name="option" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="form__title">Потребуется сдача</div>
+                </label>
+                <label class="radio">
+                  <input type="radio" name="option" class="radio__elem">
+                  <div class="radio__visible"></div>
+                  <div class="form__title">Оплата по карте</div>
+                </label>
               </div>
-              <div class="form__row" <div class="form__controls">
+              <div class="form__controls">
                 <label class="radio radio--checkbox">
                   <input type="checkbox" class="radio__elem">
                   <div class="radio__visible radio__visible--checkbox"></div>
@@ -234,10 +247,52 @@
                 </label>
               </div>
               <div class="form__btns">
-                <input type="submit" value="Заказать" class="btn btn--theme--red">
+                <input type="submit" value="Заказать" class="btn btn--theme--red btn--frm-btn">
                 <input type="reset" value="Очистить" class="btn btn--theme--transparent">
               </div>
             </div>
+        </div>
+      </section>
+      <section class="contacts-section">
+        <img src="./img/map.png" alt="" class="map-img">
+
+        <div class="footer">
+          <div class="footer__content">
+            <span class="footer__content-adress">Москва, ул.Новый Арбат, д.31/12</span>
+            <a href="tel:+78009039090" class="phone-number footer__phone-number">
+              <span class="phone-number__icon">
+                <svg class="phone-number__icon-elem">
+                  <use xlink:href="./sprite.svg#phone"></use>
+                </svg>
+              </span>
+              <span class="phone-number__text">8 800 903 90 90</span>
+            </a>
+          </div>
+
+          <div class="social footer__social">
+            <ul class="social__items">
+              <li class="social__item">
+                <a href="#" class="social__item-link">
+                  <img src="./img/telegram.svg" alt="telegram" class="social__item-icon">
+                </a>
+              </li>
+              <li class="social__item social__item-select">
+                <a href="#" class="social__item-link">
+                  <img src="./img/vk.svg" alt="vk" class="social__item-icon">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__item-link">
+                  <img src="./img/facebook.svg" alt="facebook" class="social__item-icon">
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__item-link">
+                  <img src="./img/instagram.svg" alt="instagram" class="social__item-icon">
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
     </div>
