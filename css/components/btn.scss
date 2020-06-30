@@ -20,13 +20,12 @@
     color: #fff;
     background: $red;
     &:hover{
-      color:$red;
-      background: #fff;
+      background: #ca1b36;
     }
-    &:focus{
-      color:$red;
-      background: #fff;
-    }
+    //&:focus{
+    //  color:$red;
+     // background: #fff;
+    //}
   }
 
   &--theme--transparent{
@@ -38,8 +37,8 @@
     &:hover{
       color: $red;
     }
-    &:focus{
+    //&:focus{
       //color:$red;
-    }
+    //}
   }
 }

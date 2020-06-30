@@ -7,11 +7,30 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Beats</title>
   <link rel="stylesheet" href="./css/main.css">
+  
 </head>
 
 <body>
   <div class="wrapper">
     <div class="maincontent">
+      <section class="overlay" id="overlay">
+        <a href="#" class="overlay__close-btn" id="closeOverlay">
+          <svg class="overlay__close-icon">
+            <use xlink:href="./sprite.svg#close"></use>
+          </svg>
+        </a>
+        <nav class="overlay__menu">
+          <ul class="overlay__menu-list">
+            <li class="overlay__menu-item"><a href="#" class="overlay__menu-link">О нас</a></li>
+            <li class="overlay__menu-item"><a href="#" class="overlay__menu-link">Наушники</a></li>
+            <li class="overlay__menu-item"><a href="#" class="overlay__menu-link">Команда</a></li>
+            <li class="overlay__menu-item"><a href="#" class="overlay__menu-link">Цвета</a></li>
+            <li class="overlay__menu-item"><a href="#" class="overlay__menu-link">Отзывы</a></li>
+            <li class="overlay__menu-item"><a href="#" class="overlay__menu-link">Как мы работаем</a></li>
+            <li class="overlay__menu-item"><a href="#" class="overlay__menu-link">Контакты</a></li>
+          </ul>
+        </nav>
+      </section>
       <section class="hero">
         <div class="container hero__container">
           <header class="header">
@@ -37,7 +56,7 @@
               </span>
               <span class="phone-number__text">8 800 903 90 90</span>
             </a>
-            <a href="" class="hamburger">
+            <a href="" class="hamburger" id="hamburger">
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
               <span class="hamburger__plank"></span>
@@ -137,6 +156,53 @@
             </li>
           </ul>
         </div>
+      </section>
+      <section class="section shop-section">
+
+        <div class="container shop__container">
+          <div class="shop__image-arroows">
+            <div class="shop__arrow shop__arrow-left">
+              <div class="arrow-icon arrow-icon-left"></div>
+            </div>
+            <div class="shop__image">
+              <img src="./img/mx452_av3_b.png" alt="" class="shop__image-image">
+            </div>
+            <div class="shop__arrow shop__arrow-right">
+              <div class="arrow-icon arrow-icon-right"></div>
+            </div>
+          </div>
+          <div class="shop__content">
+            <div class="shop__specification-btn">
+              <svg class="shop__specification-icon">
+                <use xlink:href="./sprite.svg#gear"></use>
+              </svg>
+            </div>
+            <div class="shop__title">
+              <h2 class="shop__title-text">beats solo 3. цвет «Атласное серебро»</h2>
+            </div>
+            <div class="shop__text">
+              <p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему
+                IPhone — они мгновенно подключатся к нему.</p>
+            </div>
+            <div class="shop__specifications">
+              <div class="shop__specification">
+                <p>Зарядка</p>
+                <p class="specification-text">2 часа</p>
+              </div>
+              <div class="shop__specification shop__specification-weight">
+                <p>Вес</p>
+                <p class="specification-text">215 грамм</p>
+              </div>
+            </div>
+            <div class="shop__price-btn">
+              <div class="shop__price">14 990 ₽</div>
+              <div class="shop__btn">
+                <a href="#" class="btn btn--theme--red">Заказать</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </section>
       <section class="section reviews-section">
         <div class="container">
@@ -254,44 +320,47 @@
         </div>
       </section>
       <section class="contacts-section">
-        <img src="./img/map.png" alt="" class="map-img">
-
-        <div class="footer">
-          <div class="footer__content">
-            <span class="footer__content-adress">Москва, ул.Новый Арбат, д.31/12</span>
-            <a href="tel:+78009039090" class="phone-number footer__phone-number">
-              <span class="phone-number__icon">
-                <svg class="phone-number__icon-elem">
-                  <use xlink:href="./sprite.svg#phone"></use>
-                </svg>
-              </span>
-              <span class="phone-number__text">8 800 903 90 90</span>
-            </a>
+        <div class="contacts-section__container">
+          <div class="contacts-section__map">
+            <img src="./img/map.png" alt="" class="map-img">
           </div>
+          <div class="footer">
+            <div class="footer__content">
+              <span class="footer__content-adress">Москва, ул.Новый Арбат, д.31/12</span>
+              <a href="tel:+78009039090" class="phone-number footer__phone-number">
+                <span class="phone-number__icon">
+                  <svg class="phone-number__icon-elem">
+                    <use xlink:href="./sprite.svg#phone"></use>
+                  </svg>
+                </span>
+                <span class="phone-number__text">8 800 903 90 90</span>
+              </a>
+            </div>
 
-          <div class="social footer__social">
-            <ul class="social__items">
-              <li class="social__item">
-                <a href="#" class="social__item-link">
-                  <img src="./img/telegram.svg" alt="telegram" class="social__item-icon">
-                </a>
-              </li>
-              <li class="social__item social__item-select">
-                <a href="#" class="social__item-link">
-                  <img src="./img/vk.svg" alt="vk" class="social__item-icon">
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__item-link">
-                  <img src="./img/facebook.svg" alt="facebook" class="social__item-icon">
-                </a>
-              </li>
-              <li class="social__item">
-                <a href="#" class="social__item-link">
-                  <img src="./img/instagram.svg" alt="instagram" class="social__item-icon">
-                </a>
-              </li>
-            </ul>
+            <div class="social footer__social">
+              <ul class="social__items">
+                <li class="social__item">
+                  <a href="#" class="social__item-link">
+                    <img src="./img/telegram.svg" alt="telegram" class="social__item-icon">
+                  </a>
+                </li>
+                <li class="social__item social__item-select">
+                  <a href="#" class="social__item-link">
+                    <img src="./img/vk.svg" alt="vk" class="social__item-icon">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__item-link">
+                    <img src="./img/facebook.svg" alt="facebook" class="social__item-icon">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__item-link">
+                    <img src="./img/instagram.svg" alt="instagram" class="social__item-icon">
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -310,6 +379,7 @@
       <li class="fixed-menu__item"><a href="" class="fixed-menu__link"></a></li>
     </ul>
   </nav>
+  <script src="./js/overlay.js"></script>
 </body>
 
 </html>

@@ -1,8 +1,11 @@
 .hero{
   background-color: $gray;
   height: 100vh;
-  min-height:rem(650px);
+  min-height:740px;
   position: relative;
+  @include phones{
+    min-height: 660px;
+  } 
 
   &:after{
     content: "";
@@ -13,8 +16,6 @@
     height: rem(40px);
     background: #999999;
     transform: rotate(45deg);
-    //border: rem(10px) solid; /* Прозрачные границы */
-    //border-top: rem(10px) solid green; /* Добавляем треугольник */
   }
 }
 

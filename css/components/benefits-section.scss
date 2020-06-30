@@ -3,7 +3,7 @@
   &:after{
     content: "";
     position: absolute;
-    bottom: rem(-22px);
+    bottom: -15px;
     left: 6%;
     width: 0;
     height: 0;
@@ -11,5 +11,6 @@
     border-left: rem(16px) solid transparent;
     border-right: rem(16px) solid transparent;
     transform: rotate(-20deg);
+    z-index: 5000;
   }
 }

@@ -1,0 +1,191 @@
+.shop-section{
+  background-color: $gray;
+  height: 100vh;
+  min-height: 510px;
+  position: relative;
+  &:after{
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 90%;
+    width: rem(28px);
+    height: rem(28px);
+    background-color: black;
+    transform: rotate(-55deg);
+  }
+}
+
+.shop__container{
+  display: flex;
+  align-items: center;
+  font-size: $baseFontSize;
+  @include tablets{
+    flex-direction: column;
+  }
+}
+
+.shop__content{
+  display: flex;
+  flex-direction: column;
+  width: rem(420px);
+  margin-left: 6vw;
+  @include tablets{
+    width: 100%;
+    align-items: center;
+    margin: rem(42px) 0 rem(28px);
+  }
+  @include phones{
+    margin-top: 1.6rem;
+  }
+}
+
+.shop__specifications{
+  display: flex;
+  margin-bottom: rem(52px);
+  @include tablets{
+    margin-bottom: 2.75rem;
+  }
+  @include phones{
+    margin-bottom: 1.62;
+  }
+}
+.shop__price{
+  font-size: 2.4rem;
+  margin-right: rem(24px);
+  font-weight: lighter;
+}
+
+.shop__price-btn{
+  display: flex;
+  align-items: center;
+}
+
+.shop__title-text{
+  font-size: rem(36px);
+  line-height: 180%;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 131%;
+  margin-bottom: .5rem;
+  @include tablets{
+    font-size: rem(32px);
+    text-align: center;
+  }
+}
+
+.shop__text{
+  margin-bottom: 1.775rem;
+  width: rem(340px);
+  @include tablets{
+    width: 100%;
+    margin: .5rem 0 1.5rem;
+    text-align: center;
+  }
+}
+
+.shop__image{
+  height: rem(460px);
+  width: rem(460px);
+  //border: rem(1px) solid green;
+  background-color: #fff;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  @include tablets{
+    width: rem(350px);
+    height: rem(350px);
+  }
+}
+
+.shop__image-arroows{
+  position: relative;
+}
+
+.shop__image-image{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: block;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+}
+
+.shop__specification-btn{
+  height: rem(92px);
+  width: rem(92px);
+  border-radius: 4%;
+  background-color: #9a9a9a;
+  position: relative;
+  margin-bottom: 1.25rem;
+  @include tablets{
+    display: none;
+  }
+}
+
+.shop__specification-icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: rem(34px);
+  width: rem(34px);
+  fill: white;
+}
+
+.shop__specification{
+  margin-right: rem(100px);
+  @include tablets{
+    margin-right: rem(134px);
+  }
+
+  &-weight{
+    margin-right: 0;
+  }
+  
+}
+
+.specification-text{
+  font-weight: bold;
+}
+
+.shop__arrow{
+  position: absolute;
+  top: 46%;
+  left: -3vw;
+  width: 15px;
+  height: 30px;
+  // background-color: white;
+  overflow: hidden;
+  cursor: pointer;
+  @include tablets{
+    left: -10vw;
+    //top: 32%;
+  }
+  &-right{
+    //left: 85vw;
+    @include tablets{
+      left: 51vw;
+    }
+  }
+}
+
+.arrow-icon{
+  position: absolute;
+  left: 4px;
+  top: 2px;
+  width: 26px;
+  height: 26px;
+  border: 2px solid black;
+  border-radius: 6px;
+  transform: rotate(45deg);
+  z-index: 2000;
+  
+  &-right{
+    left: -15px;
+  }
+}
+
+.shop__arrow-right{
+  position: absolute;
+}
