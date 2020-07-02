@@ -739,6 +739,9 @@ img {
   height: 100vh;
   min-height: 510px;
   position: relative; }
+  @media screen and (max-width: 768px) {
+    .shop-section {
+      min-height: 670px; } }
   .shop-section:after {
     content: "";
     position: absolute;
@@ -749,12 +752,12 @@ img {
     background-color: black;
     transform: rotate(-55deg); }
 
-.shop__container {
+.shop-container {
   display: flex;
   align-items: center;
   font-size: 16px; }
   @media screen and (max-width: 768px) {
-    .shop__container {
+    .shop-container {
       flex-direction: column; } }
 
 .shop__content {
@@ -771,15 +774,26 @@ img {
     .shop__content {
       margin-top: 1.6rem; } }
 
-.shop__specifications {
+.shop__exposition {
   display: flex;
   margin-bottom: 3.25rem; }
   @media screen and (max-width: 768px) {
-    .shop__specifications {
+    .shop__exposition {
       margin-bottom: 2.75rem; } }
   @media screen and (max-width: 480px) {
-    .shop__specifications {
+    .shop__exposition {
       margin-bottom: 1.62; } }
+
+.shop__exposition-item {
+  margin-right: 6.25rem; }
+  @media screen and (max-width: 768px) {
+    .shop__exposition-item {
+      margin-right: 8.375rem; } }
+  .shop__exposition-item-weight {
+    margin-right: 0; }
+
+.shop__exposition-text {
+  font-weight: bold; }
 
 .shop__price {
   font-size: 2.4rem;
@@ -812,19 +826,30 @@ img {
       text-align: center; } }
 
 .shop__image {
-  height: 28.75rem;
-  width: 28.75rem;
+  height: 42vw;
+  width: 42vw;
   background-color: #fff;
   border-radius: 50%;
   overflow: hidden;
   position: relative; }
   @media screen and (max-width: 768px) {
     .shop__image {
-      width: 21.875rem;
-      height: 21.875rem; } }
+      margin-left: 5vw;
+      margin-right: 5vw; } }
+  @media screen and (max-width: 480px) {
+    .shop__image {
+      width: 60vw;
+      height: 60vw;
+      margin-left: 0;
+      margin-right: 0; } }
 
 .shop__image-arroows {
-  position: relative; }
+  display: flex;
+  align-items: center; }
+  @media screen and (max-width: 480px) {
+    .shop__image-arroows {
+      width: 100%;
+      justify-content: space-between; } }
 
 .shop__image-image {
   position: absolute;
@@ -835,6 +860,9 @@ img {
   height: 90%;
   object-fit: cover; }
 
+.shop__specification {
+  position: relative; }
+
 .shop__specification-btn {
   height: 5.75rem;
   width: 5.75rem;
@@ -842,6 +870,9 @@ img {
   background-color: #9a9a9a;
   position: relative;
   margin-bottom: 1.25rem; }
+  .shop__specification-btn:hover {
+    background-color: #6e6e6e;
+    cursor: pointer; }
   @media screen and (max-width: 768px) {
     .shop__specification-btn {
       display: none; } }
@@ -855,31 +886,56 @@ img {
   width: 2.125rem;
   fill: white; }
 
-.shop__specification {
-  margin-right: 6.25rem; }
-  @media screen and (max-width: 768px) {
-    .shop__specification {
-      margin-right: 8.375rem; } }
-  .shop__specification-weight {
-    margin-right: 0; }
+.shop__specification-item {
+  display: flex;
+  align-items: center; }
 
-.specification-text {
-  font-weight: bold; }
+.shop__specification-popup {
+  left: 93px;
+  top: -2px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.97);
+  height: 280px;
+  width: 270px;
+  position: absolute;
+  display: none; }
+
+.shop__specification-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around; }
+
+.specification-item__icon {
+  height: 36px;
+  width: 36px;
+  margin-left: 16px;
+  margin-right: 20px; }
+
+.specification-item__title {
+  width: 130px; }
 
 .shop__arrow {
-  position: absolute;
-  top: 46%;
-  left: -3vw;
+  position: relative;
   width: 15px;
   height: 30px;
   overflow: hidden;
   cursor: pointer; }
-  @media screen and (max-width: 768px) {
-    .shop__arrow {
-      left: -10vw; } }
-  @media screen and (max-width: 768px) {
-    .shop__arrow-right {
-      left: 51vw; } }
+  .shop__arrow-768 {
+    display: none; }
+    @media screen and (max-width: 768px) {
+      .shop__arrow-768 {
+        display: block; } }
+  .shop__arrow-1100 {
+    position: absolute; }
+    .shop__arrow-1100-right {
+      right: 4vw; }
+    .shop__arrow-1100-left {
+      left: 2vw; }
+    @media screen and (max-width: 768px) {
+      .shop__arrow-1100 {
+        display: none; } }
 
 .arrow-icon {
   position: absolute;
@@ -893,9 +949,6 @@ img {
   z-index: 2000; }
   .arrow-icon-right {
     left: -15px; }
-
-.shop__arrow-right {
-  position: absolute; }
 
 .overlay {
   position: absolute;

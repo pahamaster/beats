@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Beats</title>
   <link rel="stylesheet" href="./css/main.css">
-  
+
 </head>
 
 <body>
@@ -159,23 +159,67 @@
       </section>
       <section class="section shop-section">
 
-        <div class="container shop__container">
+        <div class="container shop-container">
+          <div class="shop__arrow  shop__arrow-1100 shop__arrow-1100-left">
+            <div class="arrow-icon arrow-icon-left"></div>
+          </div>
           <div class="shop__image-arroows">
-            <div class="shop__arrow shop__arrow-left">
+            <div class="shop__arrow  shop__arrow-768 shop__arrow-left">
               <div class="arrow-icon arrow-icon-left"></div>
             </div>
             <div class="shop__image">
               <img src="./img/mx452_av3_b.png" alt="" class="shop__image-image">
             </div>
-            <div class="shop__arrow shop__arrow-right">
+            <div class="shop__arrow shop__arrow-768 shop__arrow-right">
               <div class="arrow-icon arrow-icon-right"></div>
             </div>
           </div>
           <div class="shop__content">
-            <div class="shop__specification-btn">
-              <svg class="shop__specification-icon">
-                <use xlink:href="./sprite.svg#gear"></use>
-              </svg>
+            <div class="shop__specification">
+              <div class="shop__specification-btn" id="specificationBtn">
+                <svg class="shop__specification-icon">
+                  <use xlink:href="./sprite.svg#gear"></use>
+                </svg>
+              </div>
+              <div class="shop__specification-popup" id="specificationPopup">
+                <ul class="shop__specification-list">
+                  <li class="shop__specification-item">
+                    <svg class="specification-item__icon">
+                      <use xlink:href="./sprite.svg#bluetooth"></use>
+                    </svg>
+                    <div class="specification-item__title">Bluetooth</div>
+                    <div class="specification-item__value">4.0</div>
+                  </li>
+                  <li class="shop__specification-item">
+                    <svg class="specification-item__icon">
+                      <use xlink:href="./sprite.svg#road"></use>
+                    </svg>
+                    <div class="specification-item__title">Дальность</div>
+                    <div class="specification-item__value">10 м</div>
+                  </li>
+                  <li class="shop__specification-item">
+                    <svg class="specification-item__icon">
+                      <use xlink:href="./sprite.svg#charger"></use>
+                    </svg>
+                    <div class="specification-item__title">Зарядка</div>
+                    <div class="specification-item__value">2 ч</div>
+                  </li>
+                  <li class="shop__specification-item">
+                    <svg class="specification-item__icon">
+                      <use xlink:href="./sprite.svg#kg"></use>
+                    </svg>
+                    <div class="specification-item__title">Вес</div>
+                    <div class="specification-item__value">215гр</div>
+                  </li>
+                  <li class="shop__specification-item">
+                    <svg class="specification-item__icon">
+                      <use xlink:href="./sprite.svg#patent"></use>
+                    </svg>
+                    <div class="specification-item__title">Гарантия</div>
+                    <div class="specification-item__value">1 год</div>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="shop__title">
               <h2 class="shop__title-text">beats solo 3. цвет «Атласное серебро»</h2>
@@ -184,14 +228,14 @@
               <p>Беспроводные наушники Beats Solo3 готовы к работе в любой момент. Включите их и поднесите к своему
                 IPhone — они мгновенно подключатся к нему.</p>
             </div>
-            <div class="shop__specifications">
-              <div class="shop__specification">
+            <div class="shop__exposition">
+              <div class="shop__exposition-item">
                 <p>Зарядка</p>
-                <p class="specification-text">2 часа</p>
+                <p class="shop__exposition-text">2 часа</p>
               </div>
-              <div class="shop__specification shop__specification-weight">
+              <div class="shop__exposition-item shop__exposition-item-weight">
                 <p>Вес</p>
-                <p class="specification-text">215 грамм</p>
+                <p class="shop__exposition-text">215 грамм</p>
               </div>
             </div>
             <div class="shop__price-btn">
@@ -201,8 +245,70 @@
               </div>
             </div>
           </div>
+          <div class="shop__arrow  shop__arrow-1100 shop__arrow-1100-right">
+            <div class="arrow-icon arrow-icon-right"></div>
+          </div>
         </div>
 
+      </section>
+      <section class="section team-section">
+        <div class="container team-container">
+          <h1 class="team__header">КОМАНДА</h1>
+        </div>
+        <ul class="team__list">
+          <li class="team__item">
+            <div class="team__image">
+              <img src="" alt="" class="team__img">
+            </div>
+            <div class="team__name">
+              Борис Федорович
+              <div class="team__arrow">
+                <div class="team__arrow-icon"></div>
+              </div>
+            </div>
+            <div class="team__profession">Главный технолог</div>
+            <div class="team__text">Отвечает за вкусовые качества и калорийность</div>
+          </li>
+          <li class="team__item">
+            <div class="team__image">
+              <img src="" alt="" class="team__img">
+            </div>
+            <div class="team__name">
+              Борис Федорович
+              <div class="team__arrow">
+                <div class="team__arrow-icon"></div>
+              </div>
+            </div>
+            <div class="team__profession">Главный технолог</div>
+            <div class="team__text">Отвечает за вкусовые качества и калорийность</div>
+          </li>
+          <li class="team__item">
+            <div class="team__image">
+              <img src="" alt="" class="team__img">
+            </div>
+            <div class="team__name">
+              Борис Федорович
+              <div class="team__arrow">
+                <div class="team__arrow-icon"></div>
+              </div>
+            </div>
+            <div class="team__profession">Главный технолог</div>
+            <div class="team__text">Отвечает за вкусовые качества и калорийность</div>
+          </li>
+          <li class="team__item">
+            <div class="team__image">
+              <img src="" alt="" class="team__img">
+            </div>
+            <div class="team__name">
+              Борис Федорович
+              <div class="team__arrow">
+                <div class="team__arrow-icon"></div>
+              </div>
+            </div>
+            <div class="team__profession">Главный технолог</div>
+            <div class="team__text">Отвечает за вкусовые качества и калорийность</div>
+          </li>
+        </ul>
       </section>
       <section class="section reviews-section">
         <div class="container">
@@ -380,6 +486,7 @@
     </ul>
   </nav>
   <script src="./js/overlay.js"></script>
+  <script src="./js/slider.js"></script>
 </body>
 
 </html>

@@ -3,6 +3,11 @@
   height: 100vh;
   min-height: 510px;
   position: relative;
+
+  @include tablets{
+    min-height: 670px;
+  }
+
   &:after{
     content: "";
     position: absolute;
@@ -15,7 +20,7 @@
   }
 }
 
-.shop__container{
+.shop-container{
   display: flex;
   align-items: center;
   font-size: $baseFontSize;
@@ -39,7 +44,7 @@
   }
 }
 
-.shop__specifications{
+.shop__exposition{
   display: flex;
   margin-bottom: rem(52px);
   @include tablets{
@@ -49,6 +54,21 @@
     margin-bottom: 1.62;
   }
 }
+
+.shop__exposition-item{
+  margin-right: rem(100px);
+  @include tablets{
+    margin-right: rem(134px);
+  }
+  &-weight{
+    margin-right: 0;
+  }
+}
+
+.shop__exposition-text{
+  font-weight: bold;
+}
+
 .shop__price{
   font-size: 2.4rem;
   margin-right: rem(24px);
@@ -84,21 +104,35 @@
 }
 
 .shop__image{
-  height: rem(460px);
-  width: rem(460px);
+  height: 42vw;
+  width: 42vw;
   //border: rem(1px) solid green;
   background-color: #fff;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
   @include tablets{
-    width: rem(350px);
-    height: rem(350px);
+    // width: rem(350px);
+    // height: rem(350px);
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  @include phones{
+    width: 60vw;
+    height: 60vw;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
 .shop__image-arroows{
-  position: relative;
+  //position: relative;
+  display: flex;
+  align-items: center;
+  @include phones{
+    width: 100%;
+    justify-content: space-between;
+  } 
 }
 
 .shop__image-image{
@@ -111,6 +145,10 @@
   object-fit: cover;
 }
 
+.shop__specification{
+  position: relative;
+}
+
 .shop__specification-btn{
   height: rem(92px);
   width: rem(92px);
@@ -118,6 +156,10 @@
   background-color: #9a9a9a;
   position: relative;
   margin-bottom: 1.25rem;
+  &:hover{
+    background-color: #6e6e6e;
+    cursor: pointer;
+  }
   @include tablets{
     display: none;
   }
@@ -133,41 +175,85 @@
   fill: white;
 }
 
-.shop__specification{
-  margin-right: rem(100px);
-  @include tablets{
-    margin-right: rem(134px);
-  }
-
-  &-weight{
-    margin-right: 0;
-  }
-  
+.shop__specification-item{
+  //width: 100%;
+  display: flex;
+  align-items: center;
+  //justify-content: space-around;
 }
 
-.specification-text{
-  font-weight: bold;
+.shop__specification-popup{
+  left: 93px;
+  top: -2px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .97);
+  height: 280px;
+  width: 270px;
+  position: absolute;
+  display: none;
+}
+
+.shop__specification-list{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.specification-item__icon{
+  height: 36px;
+  width: 36px;
+  margin-left: 16px;
+  margin-right: 20px;
+}
+
+.specification-item__title{
+  width: 130px;
 }
 
 .shop__arrow{
-  position: absolute;
-  top: 46%;
-  left: -3vw;
+  position: relative;
+  // top: 46%;
+  // left: -3vw;
   width: 15px;
   height: 30px;
   // background-color: white;
   overflow: hidden;
   cursor: pointer;
+  &-768{
+    display: none;
+    @include tablets{
+      display: block;
+    }
+    
+  }
+
+  &-1100{
+    position: absolute;
+    &-right{
+      right: 4vw;
+    }
+    &-left{
+      left: 2vw;
+    }
+    @include tablets{
+      display: none;
+    }
+  }
+
   @include tablets{
-    left: -10vw;
+    //left: -10vw;
     //top: 32%;
   }
+
   &-right{
     //left: 85vw;
     @include tablets{
-      left: 51vw;
+      //left: 51vw;
     }
   }
+
 }
 
 .arrow-icon{
@@ -184,8 +270,4 @@
   &-right{
     left: -15px;
   }
-}
-
-.shop__arrow-right{
-  position: absolute;
 }
