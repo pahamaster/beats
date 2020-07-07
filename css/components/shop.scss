@@ -21,12 +21,22 @@
 }
 
 .shop-container{
+  position: relative;
+  .bx-wrapper{
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    margin-bottom: 0;
+  }
+}
+
+.slider__item{
   display: flex;
   align-items: center;
   font-size: $baseFontSize;
   @include tablets{
     flex-direction: column;
-  }
+  } 
 }
 
 .shop__content{
@@ -106,34 +116,36 @@
 .shop__image{
   height: 42vw;
   width: 42vw;
-  //border: rem(1px) solid green;
+  max-width: 462px;
+  max-height: 462px;
+  //border: 1px solid green;
   background-color: #fff;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
   @include tablets{
-    // width: rem(350px);
-    // height: rem(350px);
-    margin-left: 5vw;
-    margin-right: 5vw;
+     width: rem(350px);
+     height: rem(350px);
+    //margin-left: 5vw;
+    //margin-right: 5vw;
   }
   @include phones{
     width: 60vw;
     height: 60vw;
-    margin-left: 0;
-    margin-right: 0;
+    //margin-left: 0;
+    //margin-right: 0;
   }
 }
 
-.shop__image-arroows{
-  //position: relative;
-  display: flex;
-  align-items: center;
-  @include phones{
-    width: 100%;
-    justify-content: space-between;
-  } 
-}
+// .shop__image-arroows{
+//   //position: relative;
+//   display: flex;
+//   align-items: center;
+//   @include phones{
+//     //width: 100%;
+//     //justify-content: space-between;
+//   } 
+// }
 
 .shop__image-image{
   position: absolute;
@@ -142,7 +154,7 @@
   display: block;
   width: 90%;
   height: 90%;
-  object-fit: cover;
+  //object-fit: cover;
 }
 
 .shop__specification{
@@ -213,47 +225,33 @@
 }
 
 .shop__arrow{
-  position: relative;
-  // top: 46%;
-  // left: -3vw;
+  position: absolute;
   width: 15px;
   height: 30px;
   // background-color: white;
   overflow: hidden;
   cursor: pointer;
-  &-768{
-    display: none;
-    @include tablets{
-      display: block;
-    }
-    
-  }
-
-  &-1100{
-    position: absolute;
-    &-right{
-      right: 4vw;
-    }
-    &-left{
-      left: 2vw;
-    }
-    @include tablets{
-      display: none;
-    }
-  }
-
-  @include tablets{
-    //left: -10vw;
-    //top: 32%;
-  }
-
+  top: 44%;
   &-right{
-    //left: 85vw;
+    right: 2vw;
     @include tablets{
-      //left: 51vw;
+      top: 21%;
+      right: 11%;
+    }
+    @include phones{
+      right: 0;
     }
   }
-
+  &-left{
+    left: -3vw;
+    @include tablets{
+      top: 21%;
+      left: 11%;
+    }
+    @include phones{
+      left: 0;
+    }
+  }
 }
 
 .arrow-icon{
