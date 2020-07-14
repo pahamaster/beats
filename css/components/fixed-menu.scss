@@ -6,15 +6,16 @@
   @include phones{
     display: none;
   }
-}
-
-.fixed-menu__item{
-  margin-bottom: rem(5px);
-  &--active{
+  .active{
     .fixed-menu__link{
       border-color: #e42424;
     }
   }
+}
+
+.fixed-menu__item{
+  margin-bottom: rem(5px);
+  
 }
 
 .fixed-menu__link{

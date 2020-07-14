@@ -14,6 +14,8 @@ const validateFields = (form, fieldsArray) => {
 $('.form').submit(e => {
   e.preventDefault();
 
+  allowScroll=false;
+
   const form = $(e.currentTarget);
   const name = form.find("[name='name']");
   const phone = form.find("[name='phone']");
@@ -49,10 +51,13 @@ $('.form').submit(e => {
     request.always(()=>{
       $.fancybox.open({
         src: "#modal",
-        type: "inline"
+        type: "inline",
+        afterClose: ()=>{
+          allowScroll=true;
+        }
       })
     })
-  }
+  } else allowScroll=true;
 });
 
 

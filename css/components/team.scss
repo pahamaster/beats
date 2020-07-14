@@ -1,5 +1,6 @@
 .team-section{
   min-height: 610px;
+  height: 100vh;
 }
 
 .team__list{
@@ -23,8 +24,8 @@
   }
 
   .team__arrow{
-    width: 2px; 
-    height: 2px;
+    //width: 2px; 
+    //height: 2px;
     top: 11px;
     right: -14px;
     position: absolute;

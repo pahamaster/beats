@@ -1,10 +1,10 @@
 .hero{
   background-color: $gray;
-  height: 100vh;
-  min-height:740px;
+  height: 100%;
+  min-height:640px;
   position: relative;
   @include phones{
-    min-height: 660px;
+    //min-height: 660px;
   } 
 
   &:after{

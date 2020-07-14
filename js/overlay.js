@@ -7,9 +7,11 @@ const closeOverlayBtn=document.querySelector("#closeOverlay");
 hamburgerBtn.addEventListener("click", e=>{
   e.preventDefault();
   overlay.style.display="flex";
+  allowScroll=false;
 });
 
 closeOverlayBtn.addEventListener("click", e=>{
   e.preventDefault();
   overlay.style.display="none";
+  allowScroll=true;
 })

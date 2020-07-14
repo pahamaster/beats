@@ -1,3 +1,18 @@
+.reviews-section{
+  position: relative;
+  &:after{
+    content: "";
+    position: absolute;
+    bottom: rem(-18px);
+    left: 6%;
+    width: rem(34px);
+    height: rem(34px);
+    border-radius: rem(17px);
+    background: #999999;
+    z-index: 100;
+  }
+}
+
 .reviews__display{
   background: $gray;
   padding: rem(50px) rem(45px) rem(34px);
@@ -16,6 +31,7 @@
     left: 50%;
     transform: translateX(-50%);
     top: rem(-65px);
+    
   }
   @include tablets{
     padding: rem(40px) rem(30px) rem(34px);
@@ -40,7 +56,7 @@
   @include tablets{
     width: rem(130px);
     height: rem(130px);
-    margin-bottom: rem(35px);
+    margin-bottom: 4%;
   }
 }
 
@@ -56,6 +72,7 @@
   margin-left: rem(20px);
   @include tablets{
     text-align: center;
+    margin-left: 0;
   }
 }
 
@@ -63,6 +80,9 @@
   font-size: rem(27px);
   font-weight: bold;
   margin-bottom: rem(32px);
+  @include tablets{
+    margin-bottom: 2%;
+  }
 }
 
 .reviews__text{
