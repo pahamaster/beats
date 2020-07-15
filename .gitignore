@@ -1,3 +1,4 @@
 .vscode/
 mbeats/
 node_modules/
+dist/
