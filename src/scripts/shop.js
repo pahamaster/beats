@@ -1,22 +1,22 @@
 
 $('.shop__specification-btn').mouseover(e=>{
-  $this=$(e.currentTarget);
-  $this.next('.shop__specification-popup').css('display', 'block');
+  //$this=$(e.currentTarget);
+  $(e.currentTarget).next('.shop__specification-popup').css('display', 'block');
 })
 
 $('.shop__specification-btn').mouseout(e=>{
-  $this=$(e.currentTarget);
-  $this.next('.shop__specification-popup').css('display', 'none');
+  //$this=$(e.currentTarget);
+  $(e.currentTarget).next('.shop__specification-popup').css('display', 'none');
 })
 
 $('.shop__specification-popup').mouseover(e=>{
-  $this=$(e.currentTarget);
-  $this.css('display', 'block');
+  //$this=$(e.currentTarget);
+  $(e.currentTarget).css('display', 'block');
 })
 
 $('.shop__specification-popup').mouseout(e=>{
-  $this=$(e.currentTarget);
-  $this.css('display', 'none');
+  //$this=$(e.currentTarget);
+  $(e.currentTarget).css('display', 'none');
 })
 
 const slider=$('.slider').bxSlider({

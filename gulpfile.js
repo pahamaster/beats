@@ -87,10 +87,10 @@ task('scripts',()=>{
   return src(libs)
   .pipe(gulpif(env==="dev", sourcemaps.init()))
   .pipe(concat("main.min.js", {newLine: ";"}))
-  // .pipe(gulpif(env==='prod', babel({
-  //   presets: ['@babel/env']
-  // })))
-  // .pipe(gulpif(env==="prod", uglify()))
+  .pipe(gulpif(env==='prod', babel({
+    presets: ['@babel/preset-env']
+  })))
+  .pipe(gulpif(env==="prod", uglify()))
   .pipe(gulpif(env==="dev", sourcemaps.write()))
   .pipe(dest('dist'))
   .pipe(gulpif(env==="dev", reload({stream: true})));
@@ -101,8 +101,10 @@ task("icons", ()=>{
     .pipe(svgo({
       plugins:[
         {
+          removeDimensions:{},
+          removeTitle:{},
           removeAttrs:{
-            attrs: "(fill|stroke|style|width|height|data.*)"
+            attrs: "(fill|stroke|style|data.*)"
           }
         }
       ]

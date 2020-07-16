@@ -1,5 +1,5 @@
 const mesureWidth=item=>{
-  clientWidth=document.documentElement.clientWidth;
+  const clientWidth=document.documentElement.clientWidth;
   const container=item.closest(".menu-section__list");
   const titles=container.find(".menu-section__item-title");
   const titlesWidth=titles.width() * titles.length;
@@ -29,7 +29,7 @@ const openIt=item=>{
 }
 
 $('.menu-section__item-title').click(e=>{
-  clientWidth=document.documentElement.clientWidth;
+  const clientWidth=document.documentElement.clientWidth;
   const $this=$(e.currentTarget);
   const content=$this.next(".menu-section__item-content");
   const item=$this.closest(".menu-section__item");

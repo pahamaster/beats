@@ -69,8 +69,9 @@
   margin-right: rem(100px);
   @include tablets{
     margin-right: rem(134px);
+    
   }
-  &-weight{
+  &:last-child{
     margin-right: 0;
   }
 }
