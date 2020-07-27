@@ -1,7 +1,7 @@
 .menu-section{
   background: url('../img/menub.png') center no-repeat;
   background-size: cover;
-  max-height: 100vh;
+  height: 100%;
 }
 
 .menu-container{
@@ -19,6 +19,9 @@
 
 
 .menu-section__item-title{
+  overflow: hidden;
+  transition: width .3s;
+  user-select: none;
   display: flex;
   margin: 0 auto;
   width: 100px;
@@ -56,7 +59,8 @@
   .passive{
     .menu-section__item-title{ 
        @include phones{
-        display: none;
+        //display: none;
+        width: 0;
       }
     } 
   }
@@ -70,6 +74,7 @@
 .menu-section__item-content{
   width: 0;
   overflow: hidden;
+  user-select: none;
   transition: width .3s;
   position: relative;
   background: rgba(60, 60, 60, .9);

@@ -101,12 +101,15 @@ task("icons", ()=>{
     .pipe(svgo({
       plugins:[
         {
-          removeDimensions:{},
-          removeTitle:{},
+          //removeDimensions:{},
+          //removeTitle:{},
+          //removeStyleElement:{},
+          //removeUselessStrokeAndFill:{},
           removeAttrs:{
-            attrs: "(fill|stroke|style|data.*)"
+            attrs: '(fill|stroke|style|data.*)'
           }
         }
+
       ]
     }))
     .pipe(svgSprite({
@@ -132,7 +135,7 @@ task ("watch", ()=>{
   watch('./src/styles/**/*.scss', series('styles'));
   watch('./src/*.html', series('copy:html'));
   watch('./src/scripts/*.js', series('scripts'));
-  watch('./src/img/*.svg', series('icons'));
+  watch('./src/*.svg', series('icons'));
 });
 
 

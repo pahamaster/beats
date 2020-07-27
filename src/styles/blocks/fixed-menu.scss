@@ -4,7 +4,7 @@
   right: 3%;
   z-index: $z-fixed-menu;
   @include phones{
-    display: none;
+    //display: none;
   }
   .active{
     .fixed-menu__link{

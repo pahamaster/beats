@@ -1,7 +1,7 @@
 .hero{
   background-color: $gray;
   height: 100%;
-  min-height:640px;
+  //min-height:568px;
   position: relative;
   @include phones{
     //min-height: 660px;

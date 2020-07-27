@@ -1,11 +1,11 @@
 .shop-section{
   background-color: $gray;
-  height: 100vh;
-  min-height: 510px;
+  height: 100%;
+  //min-height: 510px;
   position: relative;
 
   @include tablets{
-    min-height: 640px;
+    //min-height: 640px;
   }
 
   &:after{
@@ -50,7 +50,8 @@
     margin: rem(42px) 0 rem(28px);
   }
   @include phones{
-    margin-top: 1.6rem;
+    //margin-top: 1.6rem;
+    margin-top: 1%;
   }
 }
 
@@ -61,7 +62,7 @@
     margin-bottom: 2.75rem;
   }
   @include phones{
-    margin-bottom: 1.62;
+    margin-bottom: 1vw;
   }
 }
 
@@ -69,7 +70,6 @@
   margin-right: rem(100px);
   @include tablets{
     margin-right: rem(134px);
-    
   }
   &:last-child{
     margin-right: 0;
@@ -81,7 +81,8 @@
 }
 
 .shop__price{
-  font-size: 2.4rem;
+  //font-size: 2.4rem;
+  font-size: 180%;
   margin-right: rem(24px);
   font-weight: lighter;
 }
@@ -102,6 +103,9 @@
     font-size: rem(32px);
     text-align: center;
   }
+  @include phones{
+    font-size: 9vw;
+  }
 }
 
 .shop__text{
@@ -111,6 +115,9 @@
     width: 100%;
     margin: .5rem 0 1.5rem;
     text-align: center;
+  }
+  @include phones{
+    margin: 2% 0 1%;
   }
 }
 

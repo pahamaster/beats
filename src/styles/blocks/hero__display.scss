@@ -9,6 +9,10 @@
     width: rem(350px);
     height: rem(350px);
   }
+  @include phones{
+    width: 44vh;
+    height: 44vh;
+  }
 }
 
 .hero__image-image{
@@ -49,7 +53,8 @@
   }
   @include phones{
     padding: 0 10%;
-    font-size: 36px;
+    //font-size: 36px;
+    font-size: 5vh;
     //font-weight: 600;
   }
 }
@@ -61,7 +66,7 @@
 
   @include tablets{
     width: 25rem;
-    margin: rem(14px) auto rem(24px);
+    margin: 1vh auto 1.5vh;
   }
 }
 
@@ -75,6 +80,7 @@
     //text-align: center;
   }
   @include phones{
+    margin-top: 2vh;
     //margin-bottom: 25%;
   }
 }

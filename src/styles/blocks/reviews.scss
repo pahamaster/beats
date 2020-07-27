@@ -36,6 +36,9 @@
   @include tablets{
     padding: rem(40px) rem(30px) rem(34px);
   }
+  @include phones{
+    margin-bottom: 3%;
+  }
 }
 
 .reviews__display-inner{
@@ -88,6 +91,9 @@
 .reviews__text{
   font-size: rem(18px);
   margin-bottom: rem(32px);
+  @include phones{
+    margin-bottom: 1%;
+  }
 }
 
 .reviews__author{
